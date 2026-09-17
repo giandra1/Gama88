@@ -58,7 +58,7 @@ export default function FacilityTour() {
             />
             <span className="absolute left-4 top-4 flex items-center gap-1.5 rounded-full bg-forest-600 px-3 py-1.5 text-[12px] font-semibold text-white shadow-soft">
               <MapPin size={12} />
-              Gama 88 Kalisari
+              Gama 88 Jatiasih
             </span>
           </div>
 
