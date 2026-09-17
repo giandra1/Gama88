@@ -1,7 +1,8 @@
 "use client";
 
+import Image from "next/image";
 import { useState } from "react";
-import { GraduationCap, Menu, X, MessageCircle } from "lucide-react";
+import { Menu, X, MessageCircle } from "lucide-react";
 import { nav } from "@/lib/data";
 
 export default function Navbar() {
@@ -10,17 +11,16 @@ export default function Navbar() {
   return (
     <header className="sticky top-0 z-50 border-b border-ink/5 bg-cream/90 backdrop-blur">
       <div className="container-page flex h-[72px] items-center justify-between">
-        <a href="#home" className="flex items-center gap-2.5">
-          <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-forest-600 text-white">
-            <GraduationCap size={22} strokeWidth={2.2} />
-          </span>
-          <span className="leading-tight">
-            <span className="block font-display text-[15px] font-bold text-ink">
-              Bimbingan Belajar
-            </span>
-            <span className="block text-[11px] font-medium tracking-wide text-forest-600">
-              GAMA 88 &middot; SD / SMP / SMA / UTBK
-            </span>
+        <a href="#home" className="flex items-center">
+          <span className="flex h-20 w-20 items-center justify-center overflow-hidden rounded-xl bg-transparent p-0">
+            <Image
+              src="/images/logogama.png"
+              alt="Logo Gama 88"
+              width={180}
+              height={140}
+              className="h-40 w-40 object-contain drop-shadow-sm"
+              priority
+            />
           </span>
         </a>
 
